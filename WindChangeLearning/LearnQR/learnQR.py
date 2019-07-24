@@ -1,4 +1,5 @@
-from MyQR import myqr
+#如果电脑没有安装MyQR模块，在cmd命令行输入'pip install myqr'，等待安装完成后即可使用
+from MyQR import myqr  
 import os
  
 version, level, qr_name = myqr.run(
