@@ -11,12 +11,12 @@ from_addr = input('请输入你的发件人邮箱地址:') #'jkuanming@qq.com'
 
 to_addrs = []
 while True:
-    a=input('请输入收件人邮箱：')
     #输入收件人邮箱
+    a=input('请输入收件人邮箱：') 
+    #写入列表   
     to_addrs.append(a)
-    #写入列表
-    b=input('是否继续输入，n退出，任意键继续：')
     #询问是否继续输入
+    b=input('是否继续输入，n退出，任意键继续：')    
     if b == 'n':
         break
 print(to_addrs)
@@ -48,4 +48,4 @@ server.login(username, password)
 server.sendmail(from_addr, to_addrs, msg.as_string())
 
 #关闭邮箱服务
-server.quit() 
+server.quit()
