@@ -7,7 +7,7 @@ import csv
 
 #定义变量
 username = input('请输入你的邮箱账号:') #'jkuanming@qq.com'
-password = input('请输入你的邮箱密码:') #'gsmykrjxvpazcace'
+password = input('请输入你的邮箱密码:') 
 from_addr = input('请输入你的发件人邮箱地址:') #'jkuanming@qq.com'
 smtp_server = 'smtp.qq.com'
 text = '''亲爱的学员，你好！

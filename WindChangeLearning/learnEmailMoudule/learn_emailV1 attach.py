@@ -7,7 +7,7 @@ from email.mime.application import MIMEApplication
 
 #定义变量
 username = 'jkuanming@qq.com'
-password = 'gsmykrjxvpazcace'
+password = input('请输入QQ邮箱的授权码:')
 from_addr = 'jkuanming@qq.com'
 to_addrs = ['jkuanming@aliyun.com']#'kuanming.jiang@georgfischer.com'
 smtp_server = 'smtp.qq.com'
