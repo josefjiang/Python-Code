@@ -58,11 +58,11 @@ res=requests.get(movie_URL)
 bs=BeautifulSoup(res.text,'html.parser')
 try:
     movie_link='https://www.ygdy8.com'+bs.find('div',class_='co_content8').find('td',width='55%').find('a')['href']
-    print('《'+movie_name+'》电影的主页面为:    '+movie_link)
+    print('《'+movie_name+'》电影的主页面为:   '+movie_link)
     res_movie=requests.get(movie_link)
     res_movie.encoding='gb2312'
     bs_movie=BeautifulSoup(res_movie.text,'html.parser')
     download_link=bs_movie.find('td',style='WORD-WRAP: break-word').text
-    print('《'+movie_name+'》电影的下载链接为:    '+download_link+'\n备注:请复制以上地址并使用迅雷或磁力链下载')
+    print('《'+movie_name+'》电影的下载链接为:   '+download_link+'\n备注:请复制以上地址并使用迅雷或磁力链下载')
 except AttributeError:
     print('找不到《'+movie_name+'》电影的主页面，请换一个关键词再试试')
